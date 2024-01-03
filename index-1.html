@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style-1.css">
+  <title>mulanaPH</title>
+</head>
+<body>
+  <div class="main-container">
+    <nav class="nav">
+      <div class="logo">
+        <a href="index-1.html"><img class="logs" src="./img/MULANA-removebg-preview.png" alt="logo"></a>
+      </div>
+      <ul class="menu">
+        <li><a class="home" href="#">home</a></li>
+        <li><a class="shop" href="#">shop</a></li>
+        <li><a class="about" href="#">about</a></li>
+        <li><a class="contact" href="#">contact</a></li>
+        <li><a class="customize" href="#">customize</a></li>
+      </ul>
+      <ul class="btn">
+        <li><img class="search" src="./img/search.png" alt="search"></li>
+        <li><img class="people" src="./img/people.png" alt="people"></li>
+        <li><img class="cart" src="./img/grocery-store.png" alt="cart"></li>
+      </ul>
+      
+    </nav>
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <img src="./img/home/5.png">
+      </div>
+      
+      <div class="mySlides fade">
+        <img src="./img/home/6.png">
+      </div>
+      
+      <div class="mySlides fade">
+        <img src="./img/home/7.png">
+      </div>
+      
+      </div>
+      <br>
+      
+      <div>
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+      </div>
+
+    
+
+
+  </div>
+
+
+  <script>
+    let slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+    </script>
+</body>
+</html>
