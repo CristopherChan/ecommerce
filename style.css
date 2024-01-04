@@ -6,7 +6,7 @@
   box-sizing: border-box;
 }
 body{
-  font-family: poppins;
+  font-family: 'poppins';
 }
 nav{
   background:transparent;
@@ -59,15 +59,27 @@ body{
 
 
 }
+
+.search, .people, .cart{
+  width: 20px;
+  margin: 0 20px;
+  cursor: pointer;
+  
+}
+
+.slideshow-container {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  overflow: hidden;
+}
 .search ,.people, .grocery{
   width: 30px;
   margin: 0 20px;
   cursor: pointer;
 }
-a:hover{
-  background: #1b9bff;
-  transition: .5s;
-}
+
+
 .checkbtn{
   font-size: 30px;
   color: white;
@@ -175,130 +187,245 @@ a:hover{
     left: 0;
   }
 }
-.homes{
+.second{
+  background: linear-gradient(0deg, rgba(36,154,195,1) 0%, rgba(247,184,255,1) 93%);
+  width: 100%;
+  height:800px;
+  display: inline-block;
+  position:static;
+}
+.text-one #ready{
+  font-family: poppins;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  width: 280px;
+  text-align: center;
+  float: right;
+}
+#ready {
+  margin:14em 30em 0 0;
+  font-style: italic;
+}
+.text-two #brand{
+  padding: 10px;
+  font-size: 20px;
+  font-style: italic;
+  float: right;
+  width:900px;
+  height: 60px;
+  margin-right: 100px;
+  font-weight:400;
+
+}
+.picture #advs{
+  border-radius: 10px;
+  margin:4em 0 0 3em; 
+}
+.parent{
   width: 100%;
   height: auto;
+  background: radial-gradient(circle, rgba(24,67,134,1) 24%, rgba(31,81,159,1) 53%, rgba(87,110,157,1) 100%);
 }
-.home{
-  display: contents;
-
-}
-
-.container {
-  position: relative;
+.child{
   text-align: center;
-  color: rgb(19, 4, 4);
+  justify-self: start;
+  padding: 30px;
+  width: 100%;
 }
-
-.welcome {
-  position: absolute;
-  top: 40%;
-  left: 10%;
-  float: left;
-  color:#737373 ;
-  font-size: 110px;
-  text-align: justify;
-  font-family:shrikhand ;
-  text-shadow: 2px 2px 2px #3a3939;
+#col {
+  width: 40vh;
+  border-radius: 3px;
+  margin: 10px;
   
 }
-.to {
-  position: absolute;
-  top: 50%;
-  left: 14%;
-  float: left;
-  color:#737373 ;
-  font-size: 110px;  
-  font-family:shrikhand ;
-  text-shadow: 2px 2px 2px #3a3939;
-
-
+.community .pic-collect{
+  display: inline-flex;
+  top: 100%;
+  font-family: "poppins" sans-serif;
 }
-.mini {
-  position: absolute;
-  top: 64%;
-  left: 19%;
-  float: left;
-  font-size: 34px;
-  font-family: league spartan;
-  color: #FF914D;
-  text-transform: uppercase;
-}
-.buy{
-  position:absolute;
-  top:90%;
-  left:4%;
-  background-color: #FF914D;
-  padding: 5px 20px 5px 20px;
-  border-radius: 15px;
+
+.community{
+  margin-top: 30px;
   color: #fff;
-  cursor: pointer;
-  font-size: 25px;
-  text-transform: uppercase;
-
-}
-.about{
-  width: 100%;
-  height: 1000px;
-  position: absolute;
-}
-.images{
-  position:absolute;
-  width: auto;
-
-}
- .lazer{
-  width: 500px;
-  height: auto;
-  margin: 10em 0 0 12em;
-  border-radius: 16px;
-  position: relative;
-  display: flex;
-  box-shadow: 0 5px 20px rgb(0 0 0 / .5);
-}
-.text-1{
-  position: relative;
-  top:44%;
-  right: 47%;
+  align-items: center;
   text-align: center;
-  float: right;
-  text-transform: uppercase;
-  font-style: italic;
+  position: relative;
+  display: inline-block;
+  height: auto;
 }
 
-.text-2 .sip{
-  font-style: italic;
-  padding: 10px;
-  float: right;
-  margin-top: 25em;
-  width: 900px;;
-  font-family: poppins;
-  font-weight: 500;
-  font-size:20px;
+.has{
+  letter-spacing:3px;
+  display: inline-flex;
 }
-.text-3{
-  clear: both;
-  width: 350px;
-  margin-left: 45em;
-  display: flex;
-  padding: 10px;
-  font-size: 17px;
-  cursor: pointer;
-  font-style: italic;
-  font-weight: 600;
- 
+#hastag{
+  text-align: center;
+  font-size: 24px;
+}
 
+.pic-collect{
+  display: grid;
+  margin: auto;
 }
-.btton .check{
-  cursor: pointer;
-  font-style: italic;
+.wave {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.wave svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 189px;
+}
+
+.wave .shape-fill {
+  fill: #2380EE;}
+.icon-media .media{
+  display: inline-flex;
+  text-align: center;
+  height: auto;
+}
+.fb, .inst, .tik{
+  text-align: center;
+  width: 40px;
   margin: 10px;
+  display: inline-flex;
+}
+.wave-2 {
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
 }
 
+.wave-2 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 189px;
+}
+
+.wave-2 .shape-fill-1 {
+  fill: #2380EE;
+}
+.featured{
+  margin-top: 100px;
+  text-align: center;
+  font-weight: lighter;
+  background: #fff;
+
+}
+#first-item{
+  max-width: 200px;
+  padding: 3px;
+  border-radius: 7px;
+
+}
+.product{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 200px;
+  text-align: center;
+  font-family: arial;
+  display: inline-block;
+  cursor: pointer;
 
 
+}
+.product{
+ background:rgb(240, 240, 240);
+ margin:10px 12px;
+ padding: 5px 0 5px 0;
+ border-radius: 10px;
+}
+.price{
+  width: auto;
+  font-weight:lighter;
+  font-size: 16px;
+}
+.feat{
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: 2dvh;
+  font-weight: 100;
+}
+     
+.product:hover{
+  background: #2d448d;
+  transition: .6s;
+  box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 1);
+
+}
+.prods{
+  color: #1b0202;
+  font-family: 'poppins'sans-serif;
+  font-size: 2.9dvh;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  font-weight:600;
+}
+.customize{
+  width: 100%;
+  height: 900px;
+  background: rgb(35,81,135);
+  background: linear-gradient(47deg, rgba(35,81,135,1) 0%, rgba(205,143,231,1) 48%, rgba(139,74,214,1) 100%);
+}
+footer .items{
+  background: rgb(36,154,195);
+  background: linear-gradient(47deg, rgba(36,154,195,1) 0%, rgba(247,184,255,1) 93%);
+  text-align: center;
+  
+}
+.logo-1{
+  text-align: center;
+  align-items: center;
+  position: relative;
+}
+.logos{
+  width: 100px;
+  cursor: pointer;
+}
+.footer-list {
+  display: inline-flex;
+  text-align: center;
+  justify-content: space-around;
+  text-transform: uppercase;
 
 
+}
+ .footer-list, .footer1{
+  margin: 0 40px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
 
-
+}
+.has-1, .hastag-1{
+  margin-top: 30px;
+  color: #fff;
+  font-size: 12px;
+  font-style: italic;
+  
+}
+.icon-media-1  .media-1{
+  display: inline-flex;
+  text-align: center;
+  height: auto;
+  display: inline-flex;
+  text-align: center;
+  height: auto;
+}
+.fb-1, .inst-1, .tik-1{
+  text-align: center;
+  width: 40px;
+  margin: 10px;
+  display: inline-flex;
+}
 

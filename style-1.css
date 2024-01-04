@@ -40,12 +40,8 @@ a:hover {
   color: blueviolet;
   translate: 0.5s;
 }
-.btn{
-  display: inline-flex;
-  align-items: center;
-  background:yellow;
-  margin-left: 1000px;
-  width: auto;
+.btn  {
+  
 }
 .search, .people, .cart{
   width: 20px;
