@@ -9,14 +9,13 @@
 <body>
   <form action="action_page.php" method="post">
     <div class="imgcontainer">
+      <h1 class="welcome">welcome</h1>
       <img src="./img/MULANA-removebg-preview.png" alt="picture" class="logo">
     </div>
   
     <div class="container">
-      <label for="uname"><b>Username</b></label>
       <input type="text" placeholder="Enter Username" name="uname" required>
   
-      <label for="psw"><b>Password</b></label>
       <input type="password" placeholder="Enter Password" name="psw" required>
           
       <button type="submit">Login</button>
@@ -25,10 +24,12 @@
       </label>
     </div>
   
-    <div class="container" style="background-color:#f1f1f1">
-      <button type="button" class="cancelbtn">Cancel</button>
+    <div class="container" >
       <span class="psw">Forgot <a href="#">password?</a></span>
     </div>
+    <div class="input-box">
+      Don't have an account?<a class="log" href="create.html" target="_blank">Sign Up</a>
+  </div>
   </form>
 </body>
 </html>

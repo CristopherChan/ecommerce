@@ -85,22 +85,26 @@ label{
   transform: translateY(10px);
 }
 .input-box #fname, #mname, #lname,#adds, #uname, #pword, #email{
-  color: rgb(253, 253, 253);
+  color: rgb(0, 0, 0);
   padding-left: 10px;
   font-style: italic;
   height: 50px;
   width: 400px;
   border-radius: 12px;
   font-size: 16px;
-  border: none;
-  background: #8C6C6C;
+  border-width:0 0 2px 0 ;
+  border:   1px  solid #ccc;
+
   
 }
 ::placeholder {
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   font-weight: lighter;
 }
+span{
+  font-size: 12px;
 
+}
 .log{
   font-size: 12px;
   font-weight: 300;
