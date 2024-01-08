@@ -1,0 +1,137 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-style: 'poppins', 'sans-serif';
+}
+body{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:radial-gradient(circle, rgba(67,220,232,1) 0%, rgba(43,6,54,1) 100%);;
+}
+.main-container{
+  max-width: 900px;
+  position: relative;
+  width: 0 0 0 1;
+  background:linear-gradient(90deg, rgba(3,21,43,1) 0%, rgba(46,4,4,1) 50%, rgba(62,24,99,1) 100%);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0,0,0,01);
+  
+}
+.main-container header{
+  font-size: 3.5vw;
+  color: #fff;
+  font-weight: 500;
+  text-align: none;
+  text-transform: uppercase;
+  padding-top: 10px;
+  padding-left: 10px;
+  text-align: center;
+  padding: 10px;
+}
+.form .colunm{
+  padding-top: 30px;
+  text-align: center;
+  padding-left: 50px;
+}
+.form .input-box{
+  position: relative;
+  font-size: 16px;
+}
+.input-box{
+  padding: 5px;
+  text-align: justify;
+  display: inline-flex;
+  margin-left: 50px;
+
+
+}
+label{
+  width: 100px;
+  font-weight: 500;
+  color: #fff;
+  font-size:1em;
+  margin: 8px;
+  padding-right: 10px;
+}
+.colunm #submit{
+  width: 200%;
+  background: rgb(3, 112, 236);
+  align-items: center;
+  font-size: 2vmin;
+  cursor: pointer;
+  padding: .5vw;
+  outline: none;
+  color: #fff;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 2px #999;
+}
+.colunm #records{
+  width:200%;
+  text-align: center;
+  background: rgb(3, 112, 236);
+  align-items: center;
+  font-size: 2vmin;
+  cursor: pointer;
+  padding: .6vw;
+  outline: none;
+  color: #fff;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 2px #999;
+  text-decoration:none;
+}
+#records:hover{
+  background: linear-gradient(23deg,rgba(67,220,232,1)0%, rgba(213,70,252,1)100%);
+}
+#records:active{
+  background:linear-gradient(20deg, rgba(rgb(50, 142, 165)));
+  box-shadow: 0 5px rgb(15, 9, 15);
+  transform: translateY(5px);
+
+}
+#submit:hover{
+  background: linear-gradient(23deg,rgba(67,220,232,1)0%, rgba(213,70,252,1)100%);
+}
+#submit:active{
+  background:linear-gradient(20deg, rgba(rgb(50, 142, 165)));
+  box-shadow: 0 5px rgb(15, 9, 15);
+  transform: translateY(5px);
+}
+.input-box #fname, #mname, #lname,#adds, #uname, #pword, #email{
+  color: rgb(224, 26, 19);
+  text-align: center;
+  font-style: italic;
+  height: auto;
+  font-size: 15px;
+  padding: 1.4vmin;
+  border-radius: 6px;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid rgb(43, 174, 226);
+  width: 220px;
+}
+#bday{
+  height: auto;
+  width: 220px;
+  font-size: 15px;
+  text-align: center;
+  color: brown;
+  padding: 1.4vmin;
+  border: none;
+  border-bottom:2px solid rgb(43, 174, 226);
+  border-radius: 6px;
+  
+
+}
+#file{
+  padding: 8px;
+  text-align: left;
+  font-size: 14px;
+  color:tomato;
+  text-transform: capitalize;
+}
