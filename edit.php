@@ -1,9 +1,11 @@
 <?php 
 include("connection.php");
+session_start();
+include_once("session.php");
 
 $uids = $_GET['uid'];
 
-$select = $conn->prepare("SELECT fname, mname, lname , addr, email ,uname,img FROM customer WHERE customersID = :id");
+$select = $conn->prepare("SELECT fname, mname, lname , addr, email ,uname,img FROM customers WHERE customerID = :id");
 $select->bindParam(":id", $uids);
 $select->execute();
 
@@ -29,12 +31,12 @@ if(isset($_POST['update'])){
   
   
     // Check for existing username
-    $checkUsernameQuery = $conn->prepare("SELECT customersID FROM customer WHERE uname = :uname");
+    $checkUsernameQuery = $conn->prepare("SELECT customerID FROM customers WHERE uname = :uname");
     $checkUsernameQuery->bindParam(":uname", $username);
     $checkUsernameQuery->execute();
 
     // Check for existing email
-    $checkEmailQuery = $conn->prepare("SELECT customersID FROM customer WHERE email = :email");
+    $checkEmailQuery = $conn->prepare("SELECT customerID FROM customers WHERE email = :email");
     $checkEmailQuery->bindParam(":email", $email);
     $checkEmailQuery->execute();
 
@@ -61,7 +63,7 @@ if(isset($_POST['update'])){
     if(in_array($imgExt, $validExtensions)){
       if($imgSize <5000000){
         move_uploaded_file($tmpName,$upload_dir.$newnames);       
-        $query = $conn->prepare("UPDATE customer SET fname = :one, mname = :two, lname = :three, addr = :four, email = :five, uname = :six, img = :seven WHERE customersID = :uid");
+        $query = $conn->prepare("UPDATE customers SET fname = :one, mname = :two, lname = :three, addr = :four, email = :five, uname = :six, img = :seven WHERE customersID = :uid");
         $query->bindParam(":one",$firstnames);
         $query->bindParam(":two",$middlenames);
         $query->bindParam(":three",$lastnames);

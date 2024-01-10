@@ -7,7 +7,7 @@
   <title>mulanaPh</title>
 </head>
 <body>
-  <form action="action_page.php" method="post">
+  <form action="process.php" method="post">
     <div class="imgcontainer">
       <h1 class="welcome">welcome</h1>
       <img src="./img/MULANA-removebg-preview.png" alt="picture" class="logo">

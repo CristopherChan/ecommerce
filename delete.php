@@ -1,9 +1,11 @@
 <?php
 include("connection.php");
+session_start();
+include_once("session.php");
 
 $id = $_GET['uid'];
 
-$query = $conn->prepare("DELETE FROM customer WHERE customersID = :uid");
+$query = $conn->prepare("DELETE FROM customers WHERE customerID = :uid");
 $query ->bindParam(':uid', $id);
 $query ->execute();
 

@@ -3,10 +3,7 @@ include_once("connection.php");
 
 if(isset($_POST['register'])){
     $fname = htmlentities($_POST['fname']);
-    $mname = htmlentities($_POST['mname']);
     $lname = htmlentities($_POST['lname']);
-    $bday = htmlentities($_POST['bday']);
-    $addr = htmlentities($_POST['adds']);
     $email = htmlentities($_POST['email']);
     $uname = htmlentities($_POST['uname']);
     $pword = sha1($_POST['pword']);
@@ -45,13 +42,11 @@ if(isset($_POST['register'])){
         if($imgSize <5000000){
           move_uploaded_file($tmpName,$upload_dir.$newname);
           
-                $query = $conn->prepare("INSERT INTO customer (fname, mname, lname, bday, addr, email, uname, pword, img) 
-                VALUES (:fname, :mname, :lname, :bday, :adr, :email, :uname, :pword, :img)");
+                $query = $conn->prepare("INSERT INTO customer (fname, lname,  email, uname, pword, img) 
+                VALUES (:fname,  :lname,  :email, :uname, :pword, :img)");
                 $query->bindParam(":fname", $fname);
-                $query->bindParam(":mname", $mname);
                 $query->bindParam(":lname", $lname);
-                $query->bindParam(":bday", $bday);
-                $query->bindParam(":adr", $addr);
+
                 $query->bindParam(":email", $email);
                 $query->bindParam(":uname", $uname);
                 $query->bindParam(":pword", $pword);
@@ -59,7 +54,7 @@ if(isset($_POST['register'])){
                 $query->execute();
 
                 echo "<script>alert('COMPLETED!')</script>";
-                echo "<script>window.open('index.php','_self')</script>";
+                echo "<script>window.open('login.php','_self')</script>";
                 echo "<script>alert('File sucessfully uploaded')</script>";
                  echo "<script>window.open('index.php','_self')</script>";
             }else {
