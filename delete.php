@@ -10,5 +10,5 @@ $query ->bindParam(':uid', $id);
 $query ->execute();
 
 echo "<script>alert('Successfully Deleted!')</script>";
-echo "<script>window.open('viewrecords.php','_self')</script>";
+echo "<script>window.open('viewrecord.php','_self')</script>";
 ?>

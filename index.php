@@ -1,8 +1,3 @@
-<?php
-session_start();
-include_once("session.php");
-
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -35,7 +30,7 @@ include_once("session.php");
       <li><a class="active" href="#">Home</a></li>
       <li><a href="shop.html">Shop</a></li>
       <li><a href="about.html">About</a></li>
-      <li><a href="#">Customize</a></li>
+      <li><a href="viewrecord.php">Customize</a></li>
     </ul>
     <ol class="imgs">
       <li><img class="search" src="./img/search.png" alt=""></a></li>

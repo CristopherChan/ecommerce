@@ -9,12 +9,12 @@ if(isset($_POST['register'])){
     $pword = sha1($_POST['pword']);
     
     // Check for existing username
-    $checkUsernameQuery = $conn->prepare("SELECT customersID FROM customer WHERE uname = :uname");
+    $checkUsernameQuery = $conn->prepare("SELECT customerID FROM customers WHERE uname = :uname");
     $checkUsernameQuery->bindParam(":uname", $uname);
     $checkUsernameQuery->execute();
 
     // Check for existing email
-    $checkEmailQuery = $conn->prepare("SELECT customersID FROM customer WHERE email = :email");
+    $checkEmailQuery = $conn->prepare("SELECT customerID FROM customers WHERE email = :email");
     $checkEmailQuery->bindParam(":email", $email);
     $checkEmailQuery->execute();
 
@@ -42,7 +42,7 @@ if(isset($_POST['register'])){
         if($imgSize <5000000){
           move_uploaded_file($tmpName,$upload_dir.$newname);
           
-                $query = $conn->prepare("INSERT INTO customer (fname, lname,  email, uname, pword, img) 
+                $query = $conn->prepare("INSERT INTO customers (fname, lname,  email, uname, pword, img) 
                 VALUES (:fname,  :lname,  :email, :uname, :pword, :img)");
                 $query->bindParam(":fname", $fname);
                 $query->bindParam(":lname", $lname);

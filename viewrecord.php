@@ -20,7 +20,6 @@ include("connection.php")
         <tr>
           <th>#</th>
           <th>name</th>
-          <th>address</th>
           <th>email</th>
           <th>username</th>
           <th>picture</th>
@@ -29,15 +28,13 @@ include("connection.php")
       </thead>
       <tbody>
         <?php
-        $select = $conn->prepare("SELECT * FROM customer");
+        $select = $conn->prepare("SELECT * FROM customers");
         $select->execute();
 
         while($row = $select->fetch()){
-          $id = $row['customersID'];
+          $id = $row['customerID'];
           $firstname = $row['fname'];
-          $middlename = $row['mname'];
           $lastname = $row['lname'];
-          $address = $row['addr'];
           $email = $row['email'];
           $username = $row['uname'];
           $picture = $row['img'];
@@ -45,8 +42,7 @@ include("connection.php")
         ?>
         <tr>
           <td id="id"><?php echo $id;?></td>
-          <td><?php echo $firstname." ".$middlename." ".$lastname;?></td>
-          <td><?php echo $address;?></td>
+          <td><?php echo $firstname." ".$lastname;?></td>
           <td><?php echo $email;?></td>
           <td><?php echo $username;?></td>
           <td><img src="upload/<?php echo $picture;?>"alt="Picture" width="150"></td>

@@ -28,7 +28,7 @@
       <span class="psw">Forgot <a href="#">password?</a></span>
     </div>
     <div class="input-box">
-      Don't have an account?<a class="log" href="create.html" target="_blank">Sign Up</a>
+      Don't have an account?<a class="log" href="create.php" target="_blank">Sign Up</a>
   </div>
   </form>
 </body>
