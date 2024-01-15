@@ -29,7 +29,7 @@
     <label class="logo"><a href="index.php"><img class="mulana" src="./img/MULANA-removebg-preview.png" alt="picture"></a></label>
     <ul>
       <li><a class="active" href="#">Home</a></li>
-      <li><a href="shop.html">Shop</a></li>
+      <li><a href="shop.php">Shop</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="viewrecord.php">Customize</a></li>
     </ul>
