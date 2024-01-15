@@ -1,6 +1,4 @@
-<?php
-include("connection.php")
-?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,7 +26,7 @@ include("connection.php")
     <label for="check" class="checkbtn">
       <img class="menu" src="./img/icons8-menu-50.png" alt="menu">
     </label>
-    <label class="logo"><a href="index.html"><img class="mulana" src="./img/MULANA-removebg-preview.png" alt="picture"></a></label>
+    <label class="logo"><a href="index.php"><img class="mulana" src="./img/MULANA-removebg-preview.png" alt="picture"></a></label>
     <ul>
       <li><a class="active" href="#">Home</a></li>
       <li><a href="shop.html">Shop</a></li>
@@ -36,10 +34,8 @@ include("connection.php")
       <li><a href="viewrecord.php">Customize</a></li>
     </ul>
     <ol class="imgs">
-      <li><img class="search" src="./img/search.png" alt=""></a></li>
       <li><a href="login.php"><img class="people" src="./img/people.png" alt=""></a></li>
       <li><img class="grocery" src="./img/grocery-store.png" alt=""></li>
-      <li><img src="upload/<?php echo $picture;?>" alt="User Profile" width="70"></li>
 
     </ol>
   </nav>
