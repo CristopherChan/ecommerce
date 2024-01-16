@@ -13,12 +13,12 @@
       <label for="check" class="checkbtn">
         <img class="menu" src="./img/icons8-menu-50.png" alt="menu">
       </label>
-      <label class="logo"><a href="index.html"><img class="mulana" src="./img/MULANA-removebg-preview.png" alt="picture"></a></label>
+      <label class="logo"><a href="index.php"><img class="mulana" src="./img/MULANA-removebg-preview.png" alt="picture"></a></label>
       <ul>
-        <li><a class="active" href="index.html">Home</a></li>
-        <li><a href="shop.html">Shop</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="customize.html">Customize</a></li>
+        <li><a class="active" href="index.php">Home</a></li>
+        <li><a href="shop.php">Shop</a></li>
+        <li><a href="about.php">About</a></li>
+        <li><a href="customize.php">Customize</a></li>
       </ul>
       <ol class="imgs">
         <li><img class="search" src="./img/search.png" alt=""></a></li>
@@ -27,31 +27,9 @@
       </ol>
     </nav>
     <!-- shop menu -->
-    <div class="main">
-      <div class="product">
-        <div class="product-picture">
-          <img class="pro-pic" src="./img/1.jpg" alt="picture">
-        </div>
-        <div class="product-name">
-          <h1>tubler glass</h1>
-        </div>
-        <div class="product-discription">
-          <h2>Product Description</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam placeat quae magnam quam. Ex omnis assumenda quaerat quas quis harum tempore laboriosam saepe atque est impedit ea maxime, totam cumque.</p>
-        </div>
-        <div class="product-price">
-          <h3>P1900</h3>
-        </div>
-        <div class="check-out">
-          <h1>check out</h1>
-        </div>
-        <div class="add">
-          <h1>add to cart</h1>
-        </div>
-      </div>
-    </div>
+
     <div class="featured">
-      <h4 class="prods">More Products</h4>
+      <h4 class="prods">Products</h4>
 
       <div class="product-1">
         <a href="#"><img id="first-item" decoding="async" src="./img/1.jpg" alt="picture" title="silicon" loading="lazy"></a>

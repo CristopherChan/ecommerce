@@ -17,18 +17,7 @@ include_once("session.php");
     <?php
     include_once 'header.php';
     ?>
-    <main>
-      <div class="card">
-      <div class="image">
-        <img src="./img/1.jpg" alt="picture">
-      </div>
-      <div class="caption">
-        <p class="product_name">mulana</p>
-        <p class="price">$200</p>
-      </div>
-      <button class="add">add to cart</button>
-      </div>
-    </main>
+    
     
     <footer>
       <div class="items">

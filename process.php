@@ -19,7 +19,7 @@ if(isset($_POST['login'])){
 			$id = $row['customerID'];
 			
 			$_SESSION['cid'] = $id;
-			header("Location:customer-shop.php");
+			header("Location:home.php");
 			
 		}
 	} else {

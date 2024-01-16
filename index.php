@@ -28,9 +28,9 @@
     </label>
     <label class="logo"><a href="index.php"><img class="mulana" src="./img/MULANA-removebg-preview.png" alt="picture"></a></label>
     <ul>
-      <li><a class="active" href="#">Home</a></li>
+      <li><a class="active" href="index.php">Home</a></li>
       <li><a href="shop.php">Shop</a></li>
-      <li><a href="about.html">About</a></li>
+      <li><a href="about.php">About</a></li>
       <li><a href="viewrecord.php">Customize</a></li>
     </ul>
     <ol class="imgs">
@@ -181,11 +181,10 @@
          <img class="logos" src="./img/MULANA-removebg-preview.png" alt="Company Logo"/></a>
         </div>
         <ul class="footer-list">
-          <li><a class="footer1" href="#">Home</a></li>
-          <li><a class="footer1" href="#">Shop</a></li>
-          <li><a class="footer1" href="#">About</a></li>
+          <li><a class="footer1" href="index.php">Home</a></li>
+          <li><a class="footer1" href="shop.php">Shop</a></li>
+          <li><a class="footer1" href="about.php">About</a></li>
           <li><a class="footer1" href="#">Customize</a></li>
-          <li><a class="footer1" href="#">Contact</a></li>
         </ul>
         <div class="has-1">
           <h2 id="hastag-1"> #ReadyForAnything #EndlessExplorations<h2>
@@ -198,7 +197,7 @@
           </ul>
         </div>
         <div class="copyR">
-         <a class="cr" href="index.html"> © 2021 Mulana. All rights reserved | Design by Cristopher Chan </a>
+         <a class="cr" href="index.php"> © 2021 Mulana. All rights reserved | Design by Cristopher Chan </a>
         </div>
       </div>
       
