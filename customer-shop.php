@@ -17,31 +17,19 @@ include_once("session.php");
     <?php
     include_once 'header.php';
     ?>
-    
-    <div class="container">
-      <div class="header">product
+    <main>
+      <div class="card">
+      <div class="image">
+        <img src="./img/1.jpg" alt="picture">
       </div>
-    <table class="tb_border" >
-      <thead>
-        <tr>
-         
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><a class="picture" href="about.html"><img class="pics" src="./img/1.jpg" alt=""><h1>200</h1></a></td>
-          <td><a class="picture" href="about.html"><img class="pics" src="./img/1.jpg" alt=""><h1>200</h1></a></td>
-          <td><a class="picture" href="about.html"><img class="pics" src="./img/1.jpg" alt=""><h1>200</h1></a></td>
-          <td><a class="picture" href="about.html"><img class="pics" src="./img/1.jpg" alt=""><h1>200</h1></a></td>
-          <td><a class="picture" href="about.html"><img class="pics" src="./img/1.jpg" alt=""><h1>200</h1></a></td>
-          <td><a class="picture" href="about.html"><img class="pics" src="./img/1.jpg" alt=""><h1>200</h1></a></td>
-         
-         
-        </tr>
-      </tbody>
-    </table>
-   
-    </div>
+      <div class="caption">
+        <p class="product_name">mulana</p>
+        <p class="price">$200</p>
+      </div>
+      <button class="add">add to cart</button>
+      </div>
+    </main>
+    
     <footer>
       <div class="items">
         <div class="logo-1">
