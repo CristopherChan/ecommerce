@@ -36,7 +36,6 @@
     <ol class="imgs">
       <li><a href="login.php"><img class="people" src="./img/people.png" alt=""></a></li>
       <li><img class="grocery" src="./img/grocery-store.png" alt=""></li>
-
     </ol>
   </nav>
   <!-- Home Section -->
