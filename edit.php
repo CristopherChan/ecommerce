@@ -5,28 +5,27 @@ include_once("session.php");
 
 $uids = $_GET['uid'];
 
-$select = $conn->prepare("SELECT fname, mname, lname , addr, email ,uname,img FROM customers WHERE customerID = :id");
+$select = $conn->prepare("SELECT fname, lname,uname,pword, img FROM customers WHERE customerID = :id");
 $select->bindParam(":id", $uids);
 $select->execute();
 
             while($row = $select->fetch()){
                 $firstname = $row['fname'];
-                $middlename = $row['mname'];
                 $lastname = $row['lname'];
-                $address = $row['addr'];
                 $email = $row['email'];
                 $username = $row['uname'];
+                $password = $row['pword'];
                 $image = $row['img'];
             }
 
 if(isset($_POST['update'])){
   
   $firstnames = $_POST['fname'];
-  $middlenames = $_POST['mname'];
   $lastnames = $_POST['lname'];
-  $addresss = $_POST['addr'];
   $emails = $_POST['email'];
   $usernames = $_POST['uname'];
+  $password= $_POST['pword'];
+
  //$image = $_FILE['imga'];
   
   
@@ -63,11 +62,9 @@ if(isset($_POST['update'])){
     if(in_array($imgExt, $validExtensions)){
       if($imgSize <5000000){
         move_uploaded_file($tmpName,$upload_dir.$newnames);       
-        $query = $conn->prepare("UPDATE customers SET fname = :one, mname = :two, lname = :three, addr = :four, email = :five, uname = :six, img = :seven WHERE customersID = :uid");
+        $query = $conn->prepare("UPDATE customers SET fname = :one, lname = :three, email = :five, uname = :six, img = :seven WHERE customerID = :uid");
         $query->bindParam(":one",$firstnames);
-        $query->bindParam(":two",$middlenames);
         $query->bindParam(":three",$lastnames);
-        $query->bindParam(":four",$addresss);
         $query->bindParam(":five",$emails);
         $query->bindParam(":six",$usernames);
         $query->bindParam(":seven",$newnamess);

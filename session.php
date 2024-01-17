@@ -1,5 +1,7 @@
 
 <?php
+
+
 include_once("connection.php");
 if(isset($_SESSION['cid'])){
 	$uid = $_SESSION['cid'];

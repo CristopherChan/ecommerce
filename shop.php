@@ -21,9 +21,7 @@
         <li><a href="customize.php">Customize</a></li>
       </ul>
       <ol class="imgs">
-        <li><img class="search" src="./img/search.png" alt=""></a></li>
         <li><a href="login.html"><img class="people" src="./img/people.png" alt=""></a></li>
-        <li><img class="grocery" src="./img/grocery-store.png" alt=""></li>
       </ol>
     </nav>
     <!-- shop menu -->

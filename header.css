@@ -46,6 +46,8 @@
     padding: 7px 13px;
     border-radius: 3px;
     text-transform:lowercase;
+    font-family: 'poppins';
+    font-weight: 500;
   }
   .imgs ,ol{
     float: right;
@@ -189,14 +191,28 @@
     }
   }
 span{
+   position: absolute;
+    width: 20px;
     height: 20px;
+    top: -20%;
+    right: 30%;
     background-color: black;
     color: white;
     border-radius: 50%;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     padding: .2em;
     text-align: center;
 }
-cart{
+.cart{
     width: 30px;
+}
+nav a{
+  position: relative;
+  font-size: 2rem;
+}
+#profile{
+  width: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  
 }

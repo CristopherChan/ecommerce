@@ -13,7 +13,7 @@ html{
 
 main{
     max-width: 1500px;
-    width: 80%;
+    width: 100%;
     margin: 30px auto;
     display: flex;
     flex-direction: column;
@@ -72,6 +72,7 @@ main .card .caption .price{
 }
 
 main .card .caption button{
+    display: inline;
     background-color: red;
     color: white;
     padding: 1em;

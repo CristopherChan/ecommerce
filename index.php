@@ -35,7 +35,6 @@
     </ul>
     <ol class="imgs">
       <li><a href="login.php"><img class="people" src="./img/people.png" alt=""></a></li>
-      <li><img class="grocery" src="./img/grocery-store.png" alt=""></li>
     </ol>
   </nav>
   <!-- Home Section -->
@@ -87,7 +86,7 @@
         </ul>
         </div>
         <div class="community">
-          <h1 id="join">Join AquaFlask Community</h1>
+          <h1 id="join">Join MulanaPH Community</h1>
           <div class="has">
             <h2 id="hastag"> #ReadyForAnything #EndlessExplorations</h2>
           </div>

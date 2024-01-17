@@ -1,5 +1,6 @@
 <?php
-
+session_start();
+include_once("session.php");
   require_once 'connection-1.php';
 
   $sql = "SELECT * FROM product";
@@ -33,13 +34,6 @@
                <a href="product-review.php"><img src="<?php echo $row["product_image"]; ?>" alt=""></a>
            </div>
            <div class="caption">
-               <p class="rate">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-               </p>
                <p class="product_name"><?php echo $row["product_name"];  ?></p>
                <p class="price"><b>$<?php echo $row["price"]; ?></b></p>
                <p class="discount"><b><del>$<?php echo $row["discount"]; ?></del></b></p>
