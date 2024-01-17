@@ -28,24 +28,25 @@ include("connection.php")
       </thead>
       <tbody>
         <?php
-        $select = $conn->prepare("SELECT * FROM customers");
+        $select = $conn->prepare("SELECT * FROM product");
         $select->execute();
 
         while($row = $select->fetch()){
-          $id = $row['customerID'];
-          $firstname = $row['fname'];
-          $lastname = $row['lname'];
-          $email = $row['email'];
-          $username = $row['uname'];
-          $picture = $row['img'];
+          $id = $row['product_id'];
+          $product_discrip = $row['produc_discrip'];
+          $productname = $row['product_name'];
+          $discount = $row['discount'];
+          $price = $row['price'];
+          $product_picture = $row['product_image'];
         
         ?>
         <tr>
           <td id="id"><?php echo $id;?></td>
-          <td><?php echo $firstname." ".$lastname;?></td>
-          <td><?php echo $email;?></td>
-          <td><?php echo $username;?></td>
-          <td><img src="upload/<?php echo $picture;?>"alt="Picture" width="150"></td>
+          <td><?php echo $productname." ".$price?></td>
+          <td><?php echo $discount;?></td>
+          <td><?php echo $product_discrip;?></td>
+
+          <td><img src="upload/<?php echo $product_picture;?>"alt="Picture" width="150"></td>
           <td><a id="edt" href="edit.php?uid=<?php echo $id;?>">Edit</a></td>
           <td><a id="del" href="delete.php?uid=<?php echo $id;?>" onclick="return confirm('Are you sure?')">Delete</a></td>
 

@@ -1,28 +1,41 @@
+<?php
+  
+  require_once 'connection-1.php';
+
+$sql_cart = "SELECT * FROM cart";
+$all_cart = $conn->query($sql_cart);
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="header-style.css">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="header.css">
+
 </head>
 <body>
-<nav>
-    <input type="checkbox" id="check">
-    <label for="check" class="checkbtn">
-      <img class="menu" src="./img/icons8-menu-50.png" alt="menu">
-    </label>
-    <label class="logo"><a href="index.php"><img class="mulana" src="./img/MULANA-removebg-preview.png" alt="picture"></a></label>
-    <ul>
-      <li><a class="active" href="index.php">Home</a></li>
-      <li><a href="shop.php">Shop</a></li>
-      <li><a href="about.php">About</a></li>
-      <li><a href="viewrecord.php">Customize</a></li>
-    </ul>
-    <ol class="imgs">
-      <li><a href="login.php"><img class="people" src="./img/people.png" alt=""></a></li>
-      <li><img class="grocery" src="./img/grocery-store.png" alt=""></li>
-    </ol>
+     <header>
+     <nav>
+        <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <img class="menu" src="./img/icons8-menu-50.png" alt="menu">
+            </label>
+            <label class="logo"><a href="index.php"><img class="mulana" src="./img/MULANA-removebg-preview.png" alt="picture"></a></label>
+            <ul>
+                <li><a class="active" href="index.php">Home</a></li>
+                <li><a href="shop.php">Shop</a></li>
+                <li><a href="about.php">About</a></li>
+                <li><a href="viewrecord.php">Customize</a></li>
+            </ul>
+            <ol class="imgs">
+                <li><a href="login.php"><img class="people" src="./img/people.png" alt=""></a></li>
+                <li><a href="cart.php"><img class="cart" style="width: 30px; height: 30px;" src="./img/grocery-store.png" alt=""> <span id="badge"><?php echo mysqli_num_rows($all_cart);?></span></a></li>
+            </ol>
   </nav>
+     </header>
 </body>
 </html>

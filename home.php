@@ -30,7 +30,7 @@
        ?>
        <div class="card">
            <div class="image">
-               <img src="<?php echo $row["product_image"];?>" alt="">
+               <a href="product-review.php"><img src="<?php echo $row["product_image"]; ?>" alt=""></a>
            </div>
            <div class="caption">
                <p class="rate">
@@ -66,7 +66,7 @@
                    }
                }
 
-               xml.open("GET","connection.php?id="+id,true);
+               xml.open("GET","connection-1.php?id="+id,true);
                xml.send();
             
            })
