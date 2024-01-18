@@ -47,9 +47,11 @@ $all_cart = $conn->query($sql_cart);
                 <li><a href="viewrecord.php">Customize</a></li>
             </ul>
             <ol class="imgs">
-                <li><a href="edit.php"><img id="profile" src="upload/<?php echo $larawan;?>" alt="User Profile" ></a></li>
+                <li><a href="profile.php"><img id="profile" src="upload/<?php echo $larawan;?>" alt="User Profile" ></a></li>
                 <li><a href="login.php"><img class="people" src="./img/people.png" alt=""></a></li>
+                <li><a href="logout.php"><img class="people" src="./img/icons8-logout-30.png" alt="out"></a></li>
                 <li><a href="cart.php"><img class="cart" style="width: 30px; height: 30px;" src="./img/grocery-store.png" alt=""> <span id="badge"><?php echo mysqli_num_rows($all_cart);?></span></a></li>
+
             </ol>
   </nav>
      </header>

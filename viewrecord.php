@@ -33,7 +33,7 @@ include("connection.php")
 
         while($row = $select->fetch()){
           $id = $row['product_id'];
-          $product_discrip = $row['produc_discrip'];
+          $product_discrip = $row['product_discrip'];
           $productname = $row['product_name'];
           $discount = $row['discount'];
           $price = $row['price'];

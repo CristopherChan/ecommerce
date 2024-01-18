@@ -194,7 +194,7 @@ span{
    position: absolute;
     width: 20px;
     height: 20px;
-    top: -20%;
+    top: -80%;
     right: 30%;
     background-color: black;
     color: white;
@@ -211,7 +211,10 @@ nav a{
   font-size: 2rem;
 }
 #profile{
+  object-fit: cover;
+  object-position: center center;
   width: 30px;
+  height: 30px;
   border-radius: 50%;
   cursor: pointer;
   

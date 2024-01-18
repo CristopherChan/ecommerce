@@ -15,7 +15,7 @@ if(isset($_SESSION['cid'])){
 		$larawan = $data['img'];
 	}
 } else {
-	header("Location:index.php");
+	header("Location:login.php");
 	die();
 }
 ?>
