@@ -1,0 +1,136 @@
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+}
+body{
+  background: #fff;
+
+}
+#profile_picture{
+  text-align: center;
+  font-size: 24px;
+  text-transform: capitalize;
+}
+.con{
+  border-radius: 12px;
+  width: 900px;
+  height: 800px;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform:translate(-50%, -50%);
+  box-shadow: 0 0 12px rgba(0,0,0,.5);
+
+}
+.con-1 .title{
+  margin: auto;
+  text-align: center;
+  align-items: center;
+  width: max-content;
+  background: blueviolet;
+  margin:20px auto;  
+  width: auto;
+  font-size: 1.4em;
+}
+.con-2 {
+  background: tomato;
+  width: 550px;
+  height: 500px;
+  align-self: center;
+  flex-direction: column;
+  position: absolute;
+  top: 10%;
+  margin: auto;
+  left: 36%;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,.5);
+}
+.title{
+  text-align: center;
+}
+.max-1{
+  display: block;
+  margin: auto 20px;
+  padding: 5px;
+}
+#profile{
+  width: 250px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,.5);
+}
+.image{
+  margin: 10px;
+  border-radius: 12px;
+  border:1px solid black;
+  width: min-content;
+  height: auto;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0,0,0,.5);
+  background: transparent;
+
+}
+.max{
+  margin: auto;
+  align-items: center;
+  padding: 10px;
+  display: block;
+  font-size: 18px;
+  
+}
+.max label{
+  display: inline-block;
+  width: 100px;
+}
+input{
+  font-size: 16px;
+  height: 40px;
+  width: 520px;
+  border-radius: 12px;
+  font-size: 16px;
+  border-width:0 0 2px 0 ;
+  border:   1px  solid #ccc;
+  color: rgb(0, 0, 0);
+  padding-left:10px;
+  font-style: italic;
+
+}
+#sub{
+  border: none;
+  font-style: normal;
+}
+#sub1:hover{
+  transform: scale(1.05);
+  background: linear-gradient(23deg,rgb(32, 32, 32)0%, rgb(20, 20, 20)100%);
+
+}
+#sub1{
+  font-style: normal;
+  font-size: 16px;
+  color: #fff;
+  background: rgb(36, 129, 235);
+  text-transform: capitalize;
+}
+.cancel{
+  text-transform: capitalize;
+  width: 500px;
+  padding:10px;
+  margin-left:10px ;
+  text-align: center;
+  align-items: center;
+  background: blueviolet;
+  border-radius: 12px;
+  font-size: 16px;
+
+}
+.cancel:hover{
+  transform: scale(1.05);
+  background: linear-gradient(23deg,rgb(32, 32, 32)0%, rgb(20, 20, 20)100%);
+}
+.can{
+  font-size: 16px;
+  color: #fff;
+
+}

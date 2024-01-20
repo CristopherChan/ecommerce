@@ -21,6 +21,8 @@
         <li><a href="customize.php">Customize</a></li>
       </ul>
       <ol class="imgs">
+      <input type="text" name="" id="find" placeholder="search here...." onkeyup="search()">
+
         <li><a href="login.html"><img class="people" src="./img/people.png" alt=""></a></li>
       </ol>
     </nav>
@@ -31,7 +33,7 @@
 
       <div class="product-1">
         <a href="#"><img id="first-item" decoding="async" src="./img/1.jpg" alt="picture" title="silicon" loading="lazy"></a>
-        <h4 class="feat">Featured Products</h4>
+        <h4 class="feat">haha</h4>
         <p class="price">$19.99</p>
       </div>
       <div class="product-1">
@@ -114,10 +116,10 @@
     <script type="text/javascript">
 function search() {
 let filter = document.getElementById('find').value.toUpperCase();
-let item = document.querySelectorAll('.product');
-let l = document.getElementsByTagName('h3');
+let item = document.querySelectorAll('.product-1');
+let l = document.getElementsByTagName('h4');
 for(var i = 0;i<=l.length;i++){
-let a=item[i].getElementsByTagName('h3')[0];
+let a=item[i].getElementsByTagName('h4')[0];
 let value=a.innerHTML || a.innerText || a.textContent;
 if(value.toUpperCase().indexOf(filter) > -1) {
 item[i].style.display="";
@@ -129,5 +131,6 @@ item[i].style.display="none";
 }
 }
 </script>
+
 </body>
 </html>

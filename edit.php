@@ -91,7 +91,7 @@ if(isset($_POST['update'])){
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ViewRecords</title>
-  <link rel="stylesheet" href="style-2.css">
+  <link rel="stylesheet" href="edit-style.css">
 </head>
 <body>
   <div class="con">
@@ -100,7 +100,13 @@ if(isset($_POST['update'])){
       <div class="title">
         <h2>Update Records</h2>
       </div>
-      <a id="add" href="index.php">Add Records</a> | <a id="views" href="viewrecords.php">View Records</a>
+    </div>
+    <div class="image">
+        <div class="max-1">
+          <label for="img" id="profile_picture">old photos</label>  
+          <img id="profile" src="upload/<?php echo $image;?>"alt="Picture" width="250">
+
+        </div>
     </div>
     <div class="con-2">
       <form action="" method="post">
@@ -127,18 +133,17 @@ if(isset($_POST['update'])){
           <input type="text" name="pword" value="<?php echo $password; ?>" required>
         </div>
         <div class="max">
-          <label for="img">old photos</label>  
-          <img src="upload/<?php echo $image;?>"alt="Picture" width="150">
-        </div>
-        <div class="max">
           <label for="new_image">new image</label>
-          <input type="file" id="sub" name="imga">  
+          <input type="file" accept="image/*" id="sub" name="imga">  
           
         </div>
         <div class="max">
           <label for="&nbsp"></label>
-          <input type="submit" id="sub" name="update" value="register">  
-          
+          <input type="submit" id="sub1" name="update" value="register">  
+        </div>
+        <div class="cancel">
+            <a class="can" href="profile.php">cancel?
+            </a>
         </div>
     </div>
   </form>

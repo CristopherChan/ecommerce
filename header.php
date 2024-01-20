@@ -46,14 +46,35 @@ $all_cart = $conn->query($sql_cart);
                 <li><a href="about.php">About</a></li>
                 <li><a href="viewrecord.php">Customize</a></li>
             </ul>
+            
             <ol class="imgs">
+            <input type="text" name="" id="find" placeholder="search here...." onkeyup="search()">
+
                 <li><a href="profile.php"><img id="profile" src="upload/<?php echo $larawan;?>" alt="User Profile" ></a></li>
-                <li><a href="login.php"><img class="people" src="./img/people.png" alt=""></a></li>
-                <li><a href="logout.php"><img class="people" src="./img/icons8-logout-30.png" alt="out"></a></li>
+                
+                <li><a href="logout.php"><img class="people" src="./img/icons8-logout-30.png" alt="out" title="log out"></a></li>
                 <li><a href="cart.php"><img class="cart" style="width: 30px; height: 30px;" src="./img/grocery-store.png" alt=""> <span id="badge"><?php echo mysqli_num_rows($all_cart);?></span></a></li>
 
             </ol>
   </nav>
      </header>
 </body>
+<script type="text/javascript">
+function search() {
+let filter = document.getElementById('find').value.toUpperCase();
+let item = document.querySelectorAll('.product-1');
+let l = document.getElementsByTagName('p');
+for(var i = 0;i<=l.length;i++){
+let a=item[i].getElementsByTagName('p')[0];
+let value=a.innerHTML || a.innerText || a.textContent;
+if(value.toUpperCase().indexOf(filter) > -1) {
+item[i].style.display="";
+}
+else
+{
+item[i].style.display="none";
+}
+}
+}
+</script>
 </html>
