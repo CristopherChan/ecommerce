@@ -26,18 +26,20 @@ include_once("connection.php");
 			while($row = $query->fetch()){
         $product_image = $row['product_image'];
 				$productName = $row['product_name'];
-				$product_discrip = $row['produc_discrip'];
+				$product_discrip = $row['product_discrip'];
         $price = $row['price'];
 
+
     
-        echo "<table border>
-        <tr>
-        <td>$product_image</td>
-        <td>$productName</td>
-        <td>$product_discrip</td>
-        <td>$price</td>
-        </tr>
-        </table>";
+        echo  "<table border>".
+        "<tr>".
+        
+        "<td><img src=".$product_image."></td>".
+        "<td>".$productName."</td>".
+        "<td>".$product_discrip."</td>".
+        "<td>".$price."</td>".
+        "</tr>".
+        "</table>";
           
       }				
 }

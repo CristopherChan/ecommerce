@@ -48,8 +48,12 @@ $all_cart = $conn->query($sql_cart);
             </ul>
             
             <ol class="imgs">
-            <input type="text" name="" id="find" placeholder="search here...." onkeyup="search()">
+            
+            <form action="search.php" method="post">
+<input type="text" placeholder="search here..." name="search">
+<input type="submit" name="find" id="find" value="search">
 
+</form>
                 <li><a href="profile.php"><img id="profile" src="upload/<?php echo $larawan;?>" alt="User Profile" ></a></li>
                 
                 <li><a href="logout.php"><img class="people" src="./img/icons8-logout-30.png" alt="out" title="log out"></a></li>
@@ -59,22 +63,4 @@ $all_cart = $conn->query($sql_cart);
   </nav>
      </header>
 </body>
-<script type="text/javascript">
-function search() {
-let filter = document.getElementById('find').value.toUpperCase();
-let item = document.querySelectorAll('.product-1');
-let l = document.getElementsByTagName('p');
-for(var i = 0;i<=l.length;i++){
-let a=item[i].getElementsByTagName('p')[0];
-let value=a.innerHTML || a.innerText || a.textContent;
-if(value.toUpperCase().indexOf(filter) > -1) {
-item[i].style.display="";
-}
-else
-{
-item[i].style.display="none";
-}
-}
-}
-</script>
 </html>
