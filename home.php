@@ -36,7 +36,6 @@ include_once("session.php");
            <div class="caption">
                <p class="product_name"><?php echo $row["product_name"];  ?></p>
                <p class="price"><b>$<?php echo $row["price"]; ?></b></p>
-               <p class="discount"><b><del>$<?php echo $row["discount"]; ?></del></b></p>
            </div>
            <button class="add" data-id="<?php echo $row["product_id"];  ?>">Add to cart</button>
        </div>

@@ -49,13 +49,13 @@ $all_cart = $conn->query($sql_cart);
             
             <ol class="imgs">
             
-            <form action="search.php" method="post">
-<input type="text" placeholder="search here..." name="search">
-<input type="submit" name="find" id="find" value="search">
-
-</form>
+            <li><form action="search.php" method="post">
+                <input type="text" placeholder="search here..." name="search">
+                <input type="submit" name="find" id="find" value="search">
+            </form></li>
+            
                 <li><a href="profile.php"><img id="profile" src="upload/<?php echo $larawan;?>" alt="User Profile" ></a></li>
-                
+    
                 <li><a href="logout.php"><img class="people" src="./img/icons8-logout-30.png" alt="out" title="log out"></a></li>
                 <li><a href="cart.php"><img class="cart" style="width: 30px; height: 30px;" src="./img/grocery-store.png" alt=""> <span id="badge"><?php echo mysqli_num_rows($all_cart);?></span></a></li>
 

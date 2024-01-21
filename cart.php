@@ -49,7 +49,6 @@ $all_cart = $conn->query($sql_cart);
                 </p>
                 <p class="product_name"><?php echo $row["product_name"]; ?></p>
                 <p class="price"><b>$<?php echo $row["price"]; ?></b></p>
-                <p class="discount"><b><del>$<?php echo $row["discount"]; ?></del></b></p>
                 <div class="botton">
                 <button class="remove" data-id="<?php echo $row["product_id"]; ?>">Remove from Cart</button>
                 <button class="remove" data-id="<?php echo $row["product_id"]; ?>">Remove from Cart</button>

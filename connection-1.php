@@ -11,7 +11,7 @@ $conn = new mysqli($servername,$username,$password,$db_name);
 
 if(isset($_GET["id"])){
     $product_id = $_GET["id"];
-    $sql = "SELECT * FROM cart WHERE product_id = $product_id";
+    $sql = "SELECT * FROM cart WHERE  product_id = $product_id";
     $result = $conn->query($sql);
     $total_cart = "SELECT * FROM cart";
     $total_cart_result = $conn->query($total_cart);
@@ -22,7 +22,9 @@ if(isset($_GET["id"])){
 
         echo json_encode(["num_cart"=>$cart_num,"in_cart"=>$in_cart]);
     }else{
-        $insert = "INSERT INTO cart(product_id) VALUES($product_id)";
+        $insert = "INSERT INTO cart(product_id, quantity) VALUES($product_id, $quantity)";
+        $query->bindParam(":product_id", $product_id);
+        $query->bindParam(":quantity", $quantity);
         if($conn->query($insert) === true){
             $in_cart = "added into cart";
             echo json_encode(["num_cart"=>$cart_num,"in_cart"=>$in_cart]);
