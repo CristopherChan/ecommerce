@@ -19,35 +19,44 @@ include("connection.php")
       <thead>
         <tr>
           <th>#</th>
-          <th>name</th>
           <th>email</th>
-          <th>username</th>
-          <th>picture</th>
+          <th>address</th>
+          <th>Zip Code</th>
+          <th>Contant Number</th>
+          <th>Customer Name</th>
+          <th>total order</th>
+          <th>total price</th>
+          <th>Order Status</th>
           <th colspan="2" id="rows">action</th>
         </tr>
       </thead>
       <tbody>
       <?php
-			$select = $conn->prepare("SELECT * FROM customers");
+			$select = $conn->prepare("SELECT * FROM checkout");
 			$select->execute();
 			
 			while($row = $select->fetch()){
-				$ids = $row['customerID'];
-				$firstN = $row['fname'];
-				$last = $row['lname'];
+				$ids = $row['id'];
 				$email = $row['email'];
-				$username = $row['uname'];
-				$password = $row['pword'];
-				$picture = $row['img'];
-				
+				$address = $row['add'];
+				$code = $row['code'];
+				$con_number = $row['number'];
+				$cus_name = $row['name'];
+				$total_products = $row['total_products'];
+        $total_price = $row['total_price'];
+        $status = $row['status'];
+			
 			
 		?>
 		<tr>
-			<td><?php echo $firstN." ".$last;?></td>
+      <td><?php echo $ids;?></td>
 			<td><?php echo $email;?></td>
-			<td><?php echo $username;?></td>
-			<td><?php echo $password;?></td>
-			<td><img src="upload/<?php echo $picture;?>" alt="Picture" width="100"></td>
+			<td><?php echo $address;?></td>
+			<td><?php echo $con_number;?></td>
+      <td><?php echo $cus_name;?></td>
+			<td><?php echo $total_products;?></td>
+			<td><?php echo $total_price;?></td>
+			<td><?php echo $status;?></td>
 			<td><a href="edit.php?uid=<?php echo $ids;?>">Edit</a> | <a href="delete.php?uid=<?php echo $id;?>" onclick="return confirm('Are you sure?')">Delete</a></td>
 		</tr>
 			<?php } ?>
